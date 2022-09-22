@@ -1,23 +1,36 @@
-int _putchar(char c);
+#include "main.h"
 
-int _isupper(int c);
+/**
+ * _isupper - evalue if letter is uppercase .
+ * @c: print int
+ *
+ * Return: Always 0.
+ */
 
-int _isdigit(int c);
 
-int mul(int a, int b);
 
-void print_number(int n);
+int _isupper(int c)
 
-void print_numbers(void);
+{
 
-void print_most_numbers(void);
+	if (c >= 'A' && c <= 'Z')
 
-void more_numbers(void);
+	{
 
-void print_line(int n);
+		return (1);
 
-void print_diagonal(int n);
+	}
 
-void print_square(int size);
 
-void print_triangle(int size);
+
+	else
+
+	{
+
+		return (0);
+
+	}
+
+
+
+}
