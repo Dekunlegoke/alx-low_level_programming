@@ -1,31 +1,30 @@
 #include <stdio.h>
+
 /**
- * main - entry point
+ * main - prints all possible different combinations of three digits
  *
- * codes for printimg all posible combination of two d/t digits
- * in ascending order and seperated by a comma followed by a space.
- *
- * Return: 0 (success/correct)
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int digit1, digit2;
+	int n, m, l;
 
-	for (digit1 = 0; digit1 < 9; digit1++)
+	for (n = 48; n < 58; n++)
 	{
-		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
-		{
-			putchar((digit1 % 10) + '0');
-			putchar((digit2 % 10) + '0');
-
-			if (digit1 == 8 && digit2 == 9)
-				continue;
-
-			putchar(',');
-			putchar(' ');
+		for (m = 49; m < 58; m++)							{											for (l = 50; l < 58; l++)
+			{
+				if (l > m && m > n)
+					{											putchar(n);									putchar(m);									putchar(l);									
+						if (n != 55 || m != 56)
+						{		
+							putchar(',');									putchar(' ');
+						}									}								}
 		}
 	}
+
 	putchar('\n');
 
 	return (0);
+
 }
