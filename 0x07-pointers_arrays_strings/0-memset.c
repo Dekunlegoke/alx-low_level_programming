@@ -20,9 +20,6 @@ char *_memset(char *s, char b, unsigned int n)
 	{
 		*(s + i) = b; /*add 1 position s*/
 	}
-       	/*END FOR*/
-
-
-
-				return (s);
+	/*END FOR*/
+	return (s);
 }
