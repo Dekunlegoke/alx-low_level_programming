@@ -10,6 +10,7 @@
 
 int evaluate_num(int num, int iterator)
 {
+
 	if (iterator == num - 1)
 	{
 		return (1);
@@ -34,10 +35,12 @@ int evaluate_num(int num, int iterator)
  *@num: number
  *
  *Return: return 1 prime - return 0 otherwise
+ *
  */
 
 int is_prime_number(int num)
 {
+
 	int iterator;
 
 	iterator = 2;
@@ -54,5 +57,6 @@ int is_prime_number(int num)
 		return (1);
 	}
 
-	return (evaluate_num(num, iterator))
+	return (evaluate_num(num, iterator));
+
 }
