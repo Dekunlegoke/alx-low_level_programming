@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  *_strlen - count array
@@ -21,7 +21,6 @@ int _strlen(char *s)
 	return (i);
 }
 
-
 /**
  *_strcpy - copy arrays
  *@src: array of elements
@@ -40,6 +39,7 @@ char *_strcpy(char *dest, char *src)
 
 		i++;
 	}
+
 	dest[i] = '\0';
 
 	return (dest);
@@ -57,6 +57,7 @@ char *_strdup(char *str)
 	char *dst;
 
 	unsigned int size;
+
 
 	if (str == 0)
 	{
